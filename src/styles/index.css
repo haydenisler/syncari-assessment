@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply flex flex-col min-h-screen p-4;
+  }
+
+  .field {
+    @apply flex-grow border-gray-300 focus:ring-indigo-600 focus:border-indigo-600;
+  }
+
+  .btn {
+    @apply px-4 py-2 font-medium text-white bg-indigo-600 border-gray-800 rounded shadow;
+  }
+
+  .input-container {
+    @apply flex space-x-4;
+  }
+
+  .item-container {
+    @apply flex items-center justify-between p-4 space-x-4 border border-gray-300 rounded shadow;
+  }
+
+  .item-container-delete {
+    @apply flex items-center justify-center w-10 h-10 border border-gray-300 rounded-full shadow cursor-pointer;
+  }
+}
